@@ -1,0 +1,120 @@
+<section class="advantage">
+    <div class="container">
+        <h2>Το Ανταγωνιστικό μας Πλεονέκτημα</h2>
+        <div class="advantage-grid">
+            <div class="card large" style="background-image: url('src/assets/images/expertise.jpg');">
+                <div class="content">
+                    <h3>Εξειδίκευση</h3>
+                    <p>Πολυετής εμπειρία στον χώρο, ακρίβεια, στρατηγική σκέψη.</p>
+                </div>
+            </div>
+            <div class="card small" style="background-image: url('src/assets/images/handshake2.jpg');">
+                <div class="content">
+                    <h3>Εξατομίκευση</h3>
+                    <p>Προσαρμόζουμε τις υπηρεσίες στις ανάγκες κάθε πελάτη.</p>
+                </div>
+            </div>
+            <div class="card small" style="background-image: url('src/assets/images/office/9.jpg');">
+                <div class="content">
+                    <h3>Υποστήριξη</h3>
+                    <p>Άμεση επικοινωνία και υποστήριξη ακόμη και εκτός ωραρίου.</p>
+                </div>
+            </div>
+            <div class="card large" style="background-image: url('src/assets/images/office/13.jpeg');">
+                <div class="content">
+                    <h3>Οργάνωση</h3>
+                    <p>Σύγχρονη τεχνική υποδομή & σαφής κατανομή τμημάτων.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    .advantage {
+        background: linear-gradient(to top, #000000, #121212);
+        color: #fff;
+        padding: 4rem 2rem;
+    }
+
+    .advantage h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .advantage-grid {
+        display: grid;
+        grid-template-areas:
+    "a b d"
+    "a c d";
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
+        grid-auto-rows: 1fr;
+        margin: 0 6rem;
+        //border: 2px solid red;
+    }
+
+    .card {
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        border-radius: 16px;
+        overflow: hidden;
+        min-height: 300px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+
+    /* Full overlay for shadow */
+    .card::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent 60%);
+        z-index: 1;
+    }
+
+    /* Bottom content only */
+    .card .content {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .card h3 {
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        color: white;
+    }
+
+    .card p {
+        font-size: 0.95rem;
+        line-height: 1.4;
+        color: #ddd;
+    }
+
+    .card.large {
+        grid-area: a;
+    }
+
+    .card.small {
+        min-height: 300px;
+    }
+
+    .card:nth-child(2) {
+        grid-area: b;
+    }
+    .card:nth-child(3) {
+        grid-area: c;
+    }
+    .card:nth-child(4) {
+        grid-area: d;
+    }
+
+
+</style>

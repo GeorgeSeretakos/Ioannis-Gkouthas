@@ -1,0 +1,133 @@
+---
+import SwiperGallery from './SwiperGallery';
+---
+
+<section class="office">
+    <div class="container">
+        <h2>Το Γραφείο μας</h2>
+        <p>
+            Το λογιστικό γραφείο Ιωάννη Γκούθα ιδρύθηκε το 2017, με στόχο την παροχή ολοκληρωμένων λογιστικών και φοροτεχνικών υπηρεσιών. Από μια μικρή ομάδα δύο ατόμων, εξελίχθηκε σε μια πλήρως στελεχωμένη δομή πέντε επαγγελματιών με διακριτούς ρόλους και αρμοδιότητες.
+        </p>
+
+        <p>
+            Η εσωτερική οργάνωση του γραφείου είναι βασισμένη στην αποδοτικότητα και την ταχύτητα. Με ιδιόκτητο server και σύγχρονη τεχνική υποδομή, εξασφαλίζεται η δυνατότητα απομακρυσμένης εργασίας για όλους τους υπαλλήλους και συνεργάτες. Η συνεργασία με εξωτερικούς developers συμβάλλει στη συνεχή αναβάθμιση των υπηρεσιών.
+        </p>
+        <p>
+            Η εύρυθμη λειτουργία της επιχείρησης βασίζεται στην οργανωτική της δομή, η οποία χωρίζεται σε πέντε εξειδικευμένα τμήματα, εξασφαλίζοντας ταχύτητα, συνέπεια και αποτελεσματικότητα στην παροχή υπηρεσιών.        </p>
+
+        <div class="departments">
+            <div class="department">
+                <img src="/src/assets/icons/wallet.svg" alt="Μισθοδοσία" />
+                <div>
+                    <h4>Τμήμα</h4>
+                    <h4>Μισθοδοσίας</h4>
+                </div>
+            </div>
+            <div class="department">
+                <img src="/src/assets/icons/building-office.svg" alt="Εταιρειών" />
+                <div>
+                    <h4>Τμήμα</h4>
+                    <h4>Εταιρειών</h4>
+                </div>
+            </div>
+            <div class="department">
+                <img src="/src/assets/icons/file-text.svg" alt="Φορολογίας" />
+                <div>
+                    <h4>Τμήμα</h4>
+                    <h4>Φορολογίας</h4>
+                </div>
+            </div>
+            <div class="department">
+                <img src="/src/assets/icons/code.svg" alt="IT" />
+                <div>
+                    <h4>Τμήμα</h4>
+                    <h4>IT</h4>
+                </div>
+            </div>
+            <div class="department">
+                <img src="/src/assets/icons/person-simple-walk.svg" alt="Εξωτερικών Εργασιών" />
+                <div>
+                    <h4>Τμήμα</h4>
+                    <h4>Εξωτερικών Εργασιών</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .office {
+        background: linear-gradient(to bottom, #000000, #121212);
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        color: #fff;
+        padding: 0 20%;
+        padding-top: 4rem;
+        align-items: center;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+        margin: auto;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: #ccc;
+    }
+
+    p {
+        font-size: 1rem;
+        text-align: justify;
+    }
+
+
+    .departments {
+        display: grid;
+        //grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 2rem;
+        //width: 100%;
+        //border: 2px solid red;
+        margin: 0 auto;
+        //max-width: 800px;
+    }
+
+    .department {
+        //background-color: black;
+        border: 1px solid #515151;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        padding:  .75rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .department img {
+        width: 48px;
+        height: 48px;
+        filter: brightness(0) invert(1); /* Makes any dark SVG look white */
+    }
+
+    .department h4 {
+        font-size: .75rem;
+        font-weight: 600;
+        margin: 0;
+        //padding: .75rem;
+        //border: 2px solid red;
+    }
+
+    @media (max-width: 600px) {
+        h2,
+        .subtitle {
+            text-align: center;
+        }
+    }
+</style>

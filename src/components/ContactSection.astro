@@ -1,0 +1,141 @@
+<section class="contact">
+    <div class="container">
+        <div class="contact-wrapper">
+            <!-- Στοιχεία Επικοινωνίας -->
+            <div class="contact-info">
+                <h2>Στοιχεία Επικοινωνίας</h2>
+                <p><strong>Διεύθυνση:</strong><br />Καυταντζόγλου 40, Αθήνα 111 44<br />δίπλα στον σταθμό “Άγιος Ελευθέριος”</p>
+                <p><strong>Τηλέφωνα:</strong><br />2102289929<br />2130035849</p>
+                <p><strong>Email:</strong><br /><a href="mailto:jgouthas@gmail.com">jgouthas@gmail.com</a></p>
+                <p><strong>Ώρες Λειτουργίας:</strong><br />
+                    Δευτέρα & Τετάρτη: 09:00 - 19:00<br />
+                    Τρίτη, Πέμπτη, Παρασκευή: 09:00 - 20:00<br />
+                    Σάββατο: Κλειστά
+                </p>
+            </div>
+
+            <!-- Φόρμα -->
+            <div class="contact-form">
+                <h2>Επικοινωνήστε Μαζί μας</h2>
+                <p>Συμπληρώστε τη φόρμα και θα επικοινωνήσουμε μαζί σας το συντομότερο δυνατό.</p>
+                <form>
+                    <div class="form-row">
+                        <input type="text" name="firstName" placeholder="Όνομα" required />
+                        <input type="text" name="lastName" placeholder="Επώνυμο" required />
+                    </div>
+                    <input type="email" name="email" placeholder="Email" required />
+                    <textarea name="message" rows="5" placeholder="Μήνυμα" required></textarea>
+                    <button type="submit">Αποστολή</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style>
+    .contact {
+        background: linear-gradient(to bottom, #000000, #121212);
+        color: #fff;
+        padding: 5rem 2rem;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: stretch; /* ensures both columns have equal height */
+    }
+
+    .contact-info,
+    .contact-form {
+        background-color: rgba(255, 255, 255, 0.03);
+        padding: 2rem;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+
+    .contact-form form {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .contact-form p,
+    .contact-info p {
+        font-size: 0.95rem;
+        color: #ccc;
+        margin-bottom: 1.5rem;
+        line-height: 1.6;
+    }
+
+    .contact-info a {
+        color: #00bfff;
+        text-decoration: underline;
+    }
+
+    .form-row {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: 0.75rem;
+        border-radius: 6px;
+        border: 1px solid #333;
+        background-color: #111;
+        color: white;
+        font-size: 0.95rem;
+        box-sizing: border-box;
+    }
+
+    button {
+        background: #1e1e1e;
+        color: white;
+        padding: 0.75rem 1.5rem;
+        border: none;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.2s ease;
+        align-self: flex-end;
+        margin-top: 1rem;
+    }
+
+    button:hover {
+        background: #333;
+    }
+
+    .map iframe {
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    .map {
+        margin: 3rem auto 0 auto;
+        width: 50%;
+    }
+
+    @media (max-width: 768px) {
+        .contact-wrapper {
+            grid-template-columns: 1fr;
+        }
+
+        .form-row {
+            flex-direction: column;
+        }
+    }
+
+</style>

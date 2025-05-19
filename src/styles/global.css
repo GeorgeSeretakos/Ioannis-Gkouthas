@@ -1,0 +1,23 @@
+:root {
+    --main-bg-color: black;
+    --text-color: white;
+    --font-family: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    line-height: 1.6;
+}
+
+/* Optional: set max width for main content */
+main {
+    margin: 0 auto;
+}

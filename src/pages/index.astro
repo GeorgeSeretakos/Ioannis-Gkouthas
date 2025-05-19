@@ -1,0 +1,29 @@
+---
+// src/pages/index.astro
+import MainLayout from '../layouts/MainLayout.astro';
+import Header from '../components/Header.astro';
+import HeroSection from "../components/HeroSection.astro";
+import AboutSection from "../components/AboutSection.astro";
+import OfficeSection from "../components/OfficeSection.astro";
+import AdvantagesSection from "../components/AdvantagesSection.astro";
+import ContactSection from "../components/ContactSection.astro";
+import SwiperGallery from '../components/SwiperGallery';
+import Footer from "../components/Footer.astro";
+---
+
+<MainLayout>
+    <Fragment slot="header">
+        <Header />
+    </Fragment>
+
+    <HeroSection />
+    <AboutSection />
+    <SwiperGallery client:only="react" />
+    <OfficeSection />
+    <AdvantagesSection />
+    <ContactSection />
+
+    <Fragment slot="footer">
+        <Footer />
+    </Fragment>
+</MainLayout>
