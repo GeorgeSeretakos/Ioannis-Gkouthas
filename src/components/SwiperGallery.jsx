@@ -17,19 +17,19 @@ export default function SwiperGallery() {
           autoplay={{delay: 3500}}
         >
           <SwiperSlide>
-            <img src="/src/assets/images/office/1.jpg" alt="Εσωτερικό Γραφείου 1" className="slide-image"/>
+            <img src="/images/office/1.JPG" alt="Εσωτερικό Γραφείου 1" className="slide-image"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/src/assets/images/office/2.JPG" alt="Εσωτερικό Γραφείου 2" className="slide-image"/>
+            <img src="/images/office/2.JPG" alt="Εσωτερικό Γραφείου 2" className="slide-image"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/src/assets/images/office/3.JPG" alt="Εσωτερικό Γραφείου 3" className="slide-image"/>
+            <img src="/images/office/3.JPG" alt="Εσωτερικό Γραφείου 3" className="slide-image"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/src/assets/images/office/4.JPG" alt="Εσωτερικό Γραφείου 4" className="slide-image"/>
+            <img src="/images/office/4.JPG" alt="Εσωτερικό Γραφείου 4" className="slide-image"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/src/assets/images/office/7.JPG" alt="Εσωτερικό Γραφείου 5" className="slide-image"/>
+            <img src="/images/office/7.JPG" alt="Εσωτερικό Γραφείου 5" className="slide-image"/>
           </SwiperSlide>
         </Swiper>
       </div>

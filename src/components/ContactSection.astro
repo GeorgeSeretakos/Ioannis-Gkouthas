@@ -19,7 +19,12 @@
             <div class="contact-form">
                 <!--<h2>Επικοινωνήστε Μαζί μας</h2>-->
                 <p>Συμπληρώστε τη φόρμα και θα επικοινωνήσουμε μαζί σας το συντομότερο δυνατό.</p>
-                <form>
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <!-- Required for Netlify's hidden form detection -->
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p hidden>
+                        <label>Don’t fill this out: <input name="bot-field" /></label>
+                    </p>
                     <div class="form-row">
                         <input type="text" name="firstName" placeholder="Όνομα" required />
                         <input type="text" name="lastName" placeholder="Επώνυμο" required />
@@ -37,8 +42,6 @@
                         </label>
                         <button type="submit">Αποστολή</button>
                     </div>
-
-
                 </form>
             </div>
         </div>
