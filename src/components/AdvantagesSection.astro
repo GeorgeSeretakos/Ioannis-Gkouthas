@@ -1,26 +1,26 @@
 <section class="advantage">
     <div class="container">
-        <h2>Το Ανταγωνιστικό μας Πλεονέκτημα</h2>
+        <h1>Το Ανταγωνιστικό μας Πλεονέκτημα</h1>
         <div class="advantage-grid">
-            <div class="card large" style="background-image: url('src/assets/images/expertise.jpg');">
+            <div class="card large" style="background-image: url('src/assets/images/pexels/expertise.jpg');">
                 <div class="content">
                     <h3>Εξειδίκευση</h3>
                     <p>Πολυετής εμπειρία στον χώρο, ακρίβεια, στρατηγική σκέψη.</p>
                 </div>
             </div>
-            <div class="card small" style="background-image: url('src/assets/images/handshake2.jpg');">
+            <div class="card small" style="background-image: url('src/assets/images/pexels/handshake2.jpg');">
                 <div class="content">
                     <h3>Εξατομίκευση</h3>
                     <p>Προσαρμόζουμε τις υπηρεσίες στις ανάγκες κάθε πελάτη.</p>
                 </div>
             </div>
-            <div class="card small" style="background-image: url('src/assets/images/office/9.jpg');">
+            <div class="card small" style="background-image: url('src/assets/images/office/5.jpg');">
                 <div class="content">
                     <h3>Υποστήριξη</h3>
                     <p>Άμεση επικοινωνία και υποστήριξη ακόμη και εκτός ωραρίου.</p>
                 </div>
             </div>
-            <div class="card large" style="background-image: url('src/assets/images/office/13.jpeg');">
+            <div class="card large" style="background-image: url('src/assets/images/office/8.jpeg');">
                 <div class="content">
                     <h3>Οργάνωση</h3>
                     <p>Σύγχρονη τεχνική υποδομή & σαφής κατανομή τμημάτων.</p>
@@ -35,13 +35,12 @@
     .advantage {
         background: linear-gradient(to top, #000000, #121212);
         color: #fff;
-        padding: 4rem 2rem;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
-    .advantage h2 {
+    h1 {
         text-align: center;
-        font-size: 2rem;
-        margin-bottom: 2rem;
     }
 
     .advantage-grid {
@@ -52,8 +51,6 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1.5rem;
         grid-auto-rows: 1fr;
-        margin: 0 6rem;
-        //border: 2px solid red;
     }
 
     .card {
@@ -66,7 +63,6 @@
         display: flex;
         align-items: flex-end;
     }
-
 
     /* Full overlay for shadow */
     .card::before {
@@ -83,13 +79,6 @@
         z-index: 2;
         width: 100%;
         padding: 1.5rem;
-    }
-
-    .card h3 {
-        font-size: 1.4rem;
-        font-weight: bold;
-        margin-bottom: 0.5rem;
-        color: white;
     }
 
     .card p {
@@ -116,5 +105,26 @@
         grid-area: d;
     }
 
+    /* Medium screens (tablets) */
+    @media (max-width: 1024px) {
+        .advantage-grid {
+            grid-template-areas:
+        "a a"
+        "b c"
+        "d d";
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
 
+    /* Small screens (mobiles) */
+    @media (max-width: 768px) {
+        .advantage-grid {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card {
+            min-height: 250px;
+        }
+    }
 </style>

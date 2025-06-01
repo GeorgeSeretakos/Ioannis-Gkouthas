@@ -1,12 +1,14 @@
 <footer class="footer">
     <div class="footer-container">
-        <p>&copy; 2025 Λογιστικό Γραφείο Ιωάννης Γκούθας. All rights reserved.</p>
+        <p>&copy; 2025 Λογιστικό Γραφείο Γκούθας Γ. Ιωάννης. All rights reserved.</p>
         <div class="footer-links">
             <a href="mailto:jgouthas@gmail.com">jgouthas@gmail.com</a>
             <span>·</span>
             <a href="tel:2102289929">2102289929</a>
             <span>·</span>
             <a href="tel:2130035849">2130035849</a>
+            <span>·</span>
+            <a href="/privacy-policy">Πολιτική Απορρήτου</a>
         </div>
     </div>
     <div class="map">
@@ -34,6 +36,10 @@
     .footer-container {
         max-width: 1000px;
         margin: 0 auto;
+    }
+
+    p {
+        text-align: center;
     }
 
     .footer-links {
@@ -64,10 +70,34 @@
         width: 50%;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
+        .footer-links {
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .map {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 480px) {
         .footer-links {
             flex-direction: column;
-            gap: 0.3rem;
+            gap: 0.4rem;
+        }
+
+        p {
+            margin: 10% 7.55%;
+        }
+
+        .map {
+            width: 90%;
+        }
+
+        .footer {
+            font-size: 0.85rem;
+            padding: 2rem 0.5rem;
         }
     }
 </style>

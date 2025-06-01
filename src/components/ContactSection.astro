@@ -1,9 +1,10 @@
 <section class="contact">
     <div class="container">
+        <h1>Επικοινωνήστε Μαζί μας</h1>
         <div class="contact-wrapper">
             <!-- Στοιχεία Επικοινωνίας -->
             <div class="contact-info">
-                <h2>Στοιχεία Επικοινωνίας</h2>
+                <!--<h2>Στοιχεία Επικοινωνίας</h2>-->
                 <p><strong>Διεύθυνση:</strong><br />Καυταντζόγλου 40, Αθήνα 111 44<br />δίπλα στον σταθμό “Άγιος Ελευθέριος”</p>
                 <p><strong>Τηλέφωνα:</strong><br />2102289929<br />2130035849</p>
                 <p><strong>Email:</strong><br /><a href="mailto:jgouthas@gmail.com">jgouthas@gmail.com</a></p>
@@ -16,16 +17,28 @@
 
             <!-- Φόρμα -->
             <div class="contact-form">
-                <h2>Επικοινωνήστε Μαζί μας</h2>
+                <!--<h2>Επικοινωνήστε Μαζί μας</h2>-->
                 <p>Συμπληρώστε τη φόρμα και θα επικοινωνήσουμε μαζί σας το συντομότερο δυνατό.</p>
                 <form>
                     <div class="form-row">
                         <input type="text" name="firstName" placeholder="Όνομα" required />
                         <input type="text" name="lastName" placeholder="Επώνυμο" required />
                     </div>
-                    <input type="email" name="email" placeholder="Email" required />
-                    <textarea name="message" rows="5" placeholder="Μήνυμα" required></textarea>
-                    <button type="submit">Αποστολή</button>
+                    <div class="form-row">
+                        <input type="email" name="email" placeholder="Email" required />
+                    </div>
+                    <div class="form-row">
+                        <textarea name="message" rows="5" placeholder="Μήνυμα" required></textarea>
+                    </div>
+                    <div class="form-row form-submit-row">
+                        <label class="privacy-checkbox">
+                            <input type="checkbox" required />
+                            <span>Αποδέχομαι την <a href="/privacy-policy">Πολιτική Απορρήτου</a>.</span>
+                        </label>
+                        <button type="submit">Αποστολή</button>
+                    </div>
+
+
                 </form>
             </div>
         </div>
@@ -37,7 +50,12 @@
     .contact {
         background: linear-gradient(to bottom, #000000, #121212);
         color: #fff;
-        padding: 5rem 2rem;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    h1 {
+        text-align: center;
     }
 
     .container {
@@ -75,12 +93,6 @@
         font-size: 0.95rem;
         color: #ccc;
         margin-bottom: 1.5rem;
-        line-height: 1.6;
-    }
-
-    .contact-info a {
-        color: #00bfff;
-        text-decoration: underline;
     }
 
     .form-row {
@@ -88,6 +100,23 @@
         gap: 1rem;
         margin-bottom: 1rem;
     }
+
+    .form-submit-row {
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .privacy-checkbox {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 0.85rem;
+        color: #ccc;
+        white-space: nowrap;
+    }
+
 
     input,
     textarea {
@@ -100,6 +129,21 @@
         font-size: 0.95rem;
         box-sizing: border-box;
     }
+
+    .privacy-checkbox {
+        font-size: 0.85rem;
+        color: #ccc;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .privacy-checkbox input[type="checkbox"] {
+        accent-color: #00bfff;
+        transform: scale(1.2);
+    }
+
 
     button {
         background: #1e1e1e;
@@ -128,6 +172,14 @@
         width: 50%;
     }
 
+    /* Tablet responsiveness */
+    @media (max-width: 1024px) {
+        .contact {
+            padding: 3rem 5%;
+        }
+    }
+
+    /* Mobile responsiveness */
     @media (max-width: 768px) {
         .contact-wrapper {
             grid-template-columns: 1fr;
@@ -135,6 +187,37 @@
 
         .form-row {
             flex-direction: column;
+        }
+
+        .form-submit-row {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        button {
+            align-self: stretch;
+            width: 100%;
+        }
+
+        .map {
+            width: 100%;
+        }
+    }
+
+    /* Very small devices */
+    @media (max-width: 480px) {
+        .contact {
+            padding: 2rem 1rem;
+        }
+
+        .contact-form p,
+        .contact-info p {
+            font-size: 0.85rem;
+        }
+
+        input,
+        textarea {
+            font-size: 0.9rem;
         }
     }
 

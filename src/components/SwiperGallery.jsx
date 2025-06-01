@@ -12,24 +12,24 @@ export default function SwiperGallery() {
           modules={[Pagination, Autoplay]}
           spaceBetween={20}
           slidesPerView={1}
-          pagination={{ clickable: true }}
+          pagination={{clickable: true}}
           loop={true}
-          autoplay={{ delay: 3500 }}
+          autoplay={{delay: 3500}}
         >
           <SwiperSlide>
-            <img src="/src/assets/images/office/1.jpg" alt="Εσωτερικό Γραφείου 1" className="slide-image" />
+            <img src="/src/assets/images/office/1.jpg" alt="Εσωτερικό Γραφείου 1" className="slide-image"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/src/assets/images/office/3.jpg" alt="Εσωτερικό Γραφείου 2" className="slide-image" />
+            <img src="/src/assets/images/office/2.JPG" alt="Εσωτερικό Γραφείου 2" className="slide-image"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/src/assets/images/office/5.jpg" alt="Εσωτερικό Γραφείου 3" className="slide-image" />
+            <img src="/src/assets/images/office/3.JPG" alt="Εσωτερικό Γραφείου 3" className="slide-image"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/src/assets/images/office/7.jpg" alt="Εσωτερικό Γραφείου 3" className="slide-image" />
+            <img src="/src/assets/images/office/4.JPG" alt="Εσωτερικό Γραφείου 4" className="slide-image"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/src/assets/images/office/12.jpg" alt="Εσωτερικό Γραφείου 3" className="slide-image" />
+            <img src="/src/assets/images/office/7.JPG" alt="Εσωτερικό Γραφείου 5" className="slide-image"/>
           </SwiperSlide>
         </Swiper>
       </div>
@@ -37,26 +37,47 @@ export default function SwiperGallery() {
       <style>
         {`
           .swiper-wrapper-container {
-            width: 100%;
-            margin: auto;
-          }
+          width: 100%;
+          margin: auto;
+        }
+
+          .swiper-slide {
+          height: 80vh;
+        }
 
           .slide-image {
-            width: 100%;
-            max-height: 80vh;
-            object-fit: cover;
-          }
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
 
-          /* White pagination bullets */
+          @media (max-width: 1024px) {
+          .swiper-slide {
+          height: 85vh;
+        }
+        }
+
+          @media (max-width: 768px) {
+          .swiper-slide {
+          height: 60vh;
+        }
+        }
+
+          @media (max-width: 480px) {
+          .swiper-slide {
+          height: 50vh;
+        }
+        }
+
           .swiper-pagination-bullet {
-            background: white !important;
-            opacity: 0.7;
-          }
+          background: white !important;
+          opacity: 0.7;
+        }
 
           .swiper-pagination-bullet-active {
-            background: white !important;
-            opacity: 1;
-          }
+          background: white !important;
+          opacity: 1;
+        }
         `}
       </style>
     </>

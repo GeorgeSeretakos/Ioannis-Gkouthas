@@ -1,5 +1,4 @@
 ---
-// src/pages/index.astro
 import MainLayout from '../layouts/MainLayout.astro';
 import Header from '../components/Header.astro';
 import HeroSection from "../components/HeroSection.astro";
@@ -12,18 +11,16 @@ import Footer from "../components/Footer.astro";
 ---
 
 <MainLayout>
-    <Fragment slot="header">
-        <Header />
-    </Fragment>
+    <Header />
 
     <HeroSection />
     <AboutSection />
+
     <SwiperGallery client:only="react" />
+
     <OfficeSection />
     <AdvantagesSection />
     <ContactSection />
 
-    <Fragment slot="footer">
-        <Footer />
-    </Fragment>
+    <Footer />
 </MainLayout>

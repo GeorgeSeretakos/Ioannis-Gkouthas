@@ -1,10 +1,6 @@
 <header class="header">
     <div class="container">
-        <a href="/" class="logo">Ιωάννης Γκούθας</a>
-        <nav class="nav">
-            <a href="/" class="nav-link">Αρχική</a>
-            <a href="/articles" class="nav-link">Λογιστικά Άρθρα</a>
-        </nav>
+        <div class="logo">Γκούθας Γ. Ιωάννης</div>
     </div>
 </header>
 
@@ -14,7 +10,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        background-color: black;
+        background-color: rgba(0, 0, 0, 0.9);
         color: white;
         padding: 1rem 0;
         border-bottom: 1px solid #333;
@@ -25,30 +21,31 @@
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 
     .logo {
         font-size: 1.5rem;
-        font-weight: bold;
-        color: white;
-        text-decoration: none;
+        font-style: italic;
     }
 
-    .nav {
-        display: flex;
-        gap: 1rem;
+
+    @media (max-width: 768px) {
+        .logo {
+            font-size: 1.2rem;
+        }
+
+        .header {
+            padding: 0.75rem 0;
+        }
     }
 
-    .nav-link {
-        text-decoration: none;
-        color: white;
-        font-weight: 500;
-    }
+    @media (max-width: 480px) {
+        .logo {
+            font-size: 1.35rem;
+        }
 
-    .nav-link:hover {
-        color:  #00bfff;
+        .header {
+            padding: 0.9rem 0;
+        }
     }
 </style>
