@@ -2,9 +2,7 @@
     <div class="container">
         <h1>Επικοινωνήστε Μαζί μας</h1>
         <div class="contact-wrapper">
-            <!-- Στοιχεία Επικοινωνίας -->
             <div class="contact-info">
-                <!--<h2>Στοιχεία Επικοινωνίας</h2>-->
                 <p><strong>Διεύθυνση:</strong><br />Καυταντζόγλου 40, Αθήνα 111 44<br />δίπλα στον σταθμό “Άγιος Ελευθέριος”</p>
                 <p><strong>Τηλέφωνα:</strong><br />2102289929<br />2130035849</p>
                 <p><strong>Email:</strong><br /><a href="mailto:jgouthas@gmail.com">jgouthas@gmail.com</a></p>
@@ -15,16 +13,12 @@
                 </p>
             </div>
 
-            <!-- Φόρμα -->
             <div class="contact-form">
-                <!--<h2>Επικοινωνήστε Μαζί μας</h2>-->
                 <p>Συμπληρώστε τη φόρμα και θα επικοινωνήσουμε μαζί σας το συντομότερο δυνατό.</p>
-                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-                    <!-- Required for Netlify's hidden form detection -->
+                <form name="contact" method="POST" data-netlify="true">
                     <input type="hidden" name="form-name" value="contact" />
-                    <p hidden>
-                        <label>Don’t fill this out: <input name="bot-field" /></label>
-                    </p>
+                    <p hidden><label>Don’t fill this out: <input name="bot-field" /></label></p>
+
                     <div class="form-row">
                         <input type="text" name="firstName" placeholder="Όνομα" required />
                         <input type="text" name="lastName" placeholder="Επώνυμο" required />
