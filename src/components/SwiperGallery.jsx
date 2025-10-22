@@ -17,19 +17,34 @@ export default function SwiperGallery() {
           autoplay={{delay: 3500}}
         >
           <SwiperSlide>
-            <img src="/images/office/1.JPG" alt="Εσωτερικό Γραφείου 1" className="slide-image"/>
+            <img src="/images/office/10.JPEG" alt="Χώρος Γραφείου 1" className="slide-image"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/images/office/2.JPG" alt="Εσωτερικό Γραφείου 2" className="slide-image"/>
+          <img src="/images/office/11.JPEG" alt="Χώρος Γραφείου 2" className="slide-image"/>
+        </SwiperSlide>
+          <SwiperSlide>
+          <img src="/images/office/12.JPEG" alt="Χώρος Γραφείου 3" className="slide-image"/>
+        </SwiperSlide>
+          <SwiperSlide>
+          <img src="/images/office/13.JPEG" alt="Χώρος Γραφείου 4" className="slide-image"/>
+        </SwiperSlide>
+          <SwiperSlide>
+          <img src="/images/office/14.JPEG" alt="Χώρος Γραφείου 5" className="slide-image"/>
+        </SwiperSlide>
+          <SwiperSlide>
+            <img src="/images/office/1.JPG" alt="Χώρος Γραφείου 6" className="slide-image"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/images/office/3.JPG" alt="Εσωτερικό Γραφείου 3" className="slide-image"/>
+            <img src="/images/office/2.JPG" alt="Χώρος Γραφείου 7" className="slide-image"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/images/office/4.JPG" alt="Εσωτερικό Γραφείου 4" className="slide-image"/>
+            <img src="/images/office/3.JPG" alt="Χώρος Γραφείου 8" className="slide-image"/>
           </SwiperSlide>
           <SwiperSlide>
-            <img src="/images/office/7.JPG" alt="Εσωτερικό Γραφείου 5" className="slide-image"/>
+            <img src="/images/office/4.JPG" alt="Χώρος Γραφείου 9" className="slide-image"/>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="/images/office/7.JPG" alt="Χώρος Γραφείου 10" className="slide-image"/>
           </SwiperSlide>
         </Swiper>
       </div>
